@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/registroCliente.js"></script>
+    <script src="validar/script_form.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container-fluid  d-flex justify-content-center">
+        <img src="img/nae4.png"  height="55" width="70">
+        <img src="img/nae.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+        <img src="img/nae4.png"  height="55" width="70">
+        <img src="img/nae2.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+        <img src="img/nae4.png"  height="55" width="70">
+        <img src="img/nae2.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+        <img src="img/nae4.png"  height="55" width="70">
+        <img src="img/nae2.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+        <img src="img/nae.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="45" height="45">
+             <span class="text-danger fs-5 fw-bold">3KOWH MOTORS</span> 
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Prueba.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Catalogo</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Equipo</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Formulario.html">Registro de Clientes</a>
+              </li>
+            </ul>  
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Escribenos ¿Que Buscas?" aria-label="email">
+              <button class="btn btn-danger btn-danger-outline-success" type="button">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+          <br>
+          <br>  
+      <section class="container">
+        <div class="row my-5">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            
+              <form action="" method="POST" class="formucolor">
+                  
+                  <h3 class="display-5 text-warning text-center"> Registro De Clientes </h3>
+                               
+                <form action="procesar.html" method="post" id="registroCliente">
+                    <div class="card-body">
+                       <div class="form-group">
+                        <label for="rutTxt" class="form-label">Rut</label>
+                        <input type="text" placeholder="Ingrese su Rol Tributario (Sin Puntos): Ejemplo: 12345678-K" class="form-control" id="rutTxt" maxlength="10" required>
+                       </div>
+                        <div class="form-group">
+                            <label for="nombreTxt" class="form-label">Nombre</label>
+                            <input type="text" placeholder="Ingrese su Nombre:" class="form-control" id="nombreTxt" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidoTxt" class="form-label">Apellido</label>
+                            <input type="text" placeholder="Ingrese su Apellido:" class="form-control" id="apellidoTxt" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="edadTxt" class="form-label">Edad</label>
+                            <input type="number" placeholder="Ingrese su Edad: (+18 Años)" class="form-control" id="edadTxt" required>
+                        </div>
+
+                        <div>
+                          <label for="">Genero</label>
+                          <input type="radio" class="form-check-input" name="rbt_genero" id="rbt_genero" value="M">
+                          <label for="" class="form-check-label">Masculino</label>
+                          <input type="radio" class="form-check-input" name="rbt_genero" id="rbt_genero" value="F">
+                          <label for="" class="form-check-label">Femenino</label>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="telefonoTxt" class="form-label">Telefóno</label>
+                          <input type="number" placeholder="Ingrese su Numero Telefonico:" class="form-control" id="telefonoTxt" required>
+                       </div>
+                      
+                        <div class="form-group">
+                            <label for="correoTxt" class="form-label">Correo</label>
+                            <input type="email" placeholder="Ingrese su Correo Electrónico:" class="form-control" id="correoTxt" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass1" class="form-label">Contraseña</label>
+                            <input type="password" placeholder="Ingrese su Contraseña:" class="form-control" id="pass1" required >
+                        </div>
+                        <div class="form-group">
+                            <label for="pass2" class="form-label">Reingrese Contraseña</label>
+                            <input type="password" placeholder="Reingrese su Contraseña:" class="form-control" id="pass2" required>
+                        </div>
+                        <br/>
+
+                        <button type="button" class="btn btn-primary" onclick="validar()">Guardar</button>
+                    <button type="reset" class="btn btn-danger">Limpiar</button>
+                    
+                        <br/>
+                    </form>
+                </form>      
+            </div>
+        </div>
+    </section>
+    
+
+        <!-- /////// FOOTER ///// -->
+
+    <footer>
+        <br>
+        <a href="https://www.youtube.com/watch?v=gJ7SljP_vuA" target="_blank"><img src="img/weno.png" width="35" height="35">/Ferrari GT3 458</a> 
+        </br>
+        
+        <a href="https://www.youtube.com/watch?v=gcq1iGu9cts" target="_blank"><img src="img/weno3.png" width="30" height="35">/Ferrari 488 GTR</a> 
+    
+        <a href="#-disabled"><img src="img/correo.png" width="35" height="35">/oscar.treskow@inacapmail.cl</a> 
+    
+        <a href="#-disabled"><img src="img/telefono.png" width="35" height="35">/(9) 81 81 6157 / (9) 46 90 1965</a> 
+    
+        </footer>
+    
+    
+</body>
+</html>

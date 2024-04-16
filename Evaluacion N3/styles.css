@@ -1,0 +1,60 @@
+body{
+    background-image: url(img/body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+}
+
+nav{
+    padding: 3%;
+    background-color: white;
+}
+
+header{
+    background-color: black;
+}
+
+#menu a {
+    font-size:18px;
+    font-weight: bold;
+    color: #3f3f3f;
+
+}
+
+img{
+    padding:5px;
+}
+
+footer{
+    justify-content: center;
+    background-color:black;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    
+}
+
+
+.formucolor{
+    max-width: 36em;
+    padding: 1.3em;
+    margin: 0 auto;
+    background-color: black;
+    font-weight:bold;
+    border-radius:0.5em;
+    box-shadow: inset 1px 1px 22px 4px rgb(0,0,0,0.85)
+}
+
+label{
+    color:red;
+}
+
+.form_input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+
+}
